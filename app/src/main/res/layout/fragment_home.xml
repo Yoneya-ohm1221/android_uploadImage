@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="36dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+        <EditText
+            android:id="@+id/editTextOrderID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="รหัสใบสั่งซื้อ"
+            android:inputType="number" />
+        <EditText
+            android:id="@+id/editTextPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="ราคา"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/editTextComment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="หมายเหตุ"
+            android:inputType="text" />
+
+        <ImageView
+            android:id="@+id/imageViewSlipSelection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            tools:src="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/imageViewSlip"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:adjustViewBounds="false"
+            android:cropToPadding="true"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            tools:src="@tools:sample/avatars" />
+
+        <Button
+            android:id="@+id/buttonPayment"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="ชำระเงิน" />
+
+    </LinearLayout>
+
+</FrameLayout>
